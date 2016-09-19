@@ -48,10 +48,6 @@ public class WebService {
 
             userId = json.getInt(Constants.TAG_USER_ID);
 
-
-            Log.i(Constants.TAG_GBACARD, "Firstname: " + contact.getFirstName() + "...lastname"
-                    + contact.getLastName());
-
             pref.saveUserDetails(contact);
             pref.saveUserId(userId);
 

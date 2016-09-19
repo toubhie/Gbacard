@@ -142,6 +142,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="newgbacard.gbacard.com.gbacard.activities.HomeActivity" />
         </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="newgbacard.gbacard.com.gbacard.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".activities.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="newgbacard.gbacard.com.gbacard.activities.SettingsActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -242,6 +242,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(RegistrationActivity.this, HomeActivity.class);
                 startActivity(intent);
+                finish();
             }
 
             else if(result == 2){

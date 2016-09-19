@@ -3,6 +3,7 @@ package newgbacard.gbacard.com.gbacard.utils;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.util.Base64;
 
 import org.json.JSONException;
@@ -130,6 +131,20 @@ public class ConvertImage {
         return image;
     }
 
+    public Bitmap convertBitmapDrawableToBitmap(BitmapDrawable bitmapDrawable){
+        return bitmapDrawable.getBitmap();
+    }
 
+    public BitmapDrawable convertBitmapToBitmapDrawable(Bitmap bitmap){
+        BitmapDrawable bitmapDrawable = null;
+
+        try{
+            bitmapDrawable = new BitmapDrawable(bitmap);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+        return bitmapDrawable;
+    }
 }
 

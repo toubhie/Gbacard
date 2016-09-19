@@ -8,22 +8,4 @@
         android:title="@string/action_settings"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/action_select_card_design"
-        android:orderInCategory="100"
-        android:title="Select Card Design"
-        app:showAsAction="never" />
-
-    <item
-        android:id="@+id/action_edit_profile"
-        android:orderInCategory="100"
-        android:title="Edit Profile"
-        app:showAsAction="never" />
-
-    <item
-        android:id="@+id/action_invite_friend"
-        android:orderInCategory="100"
-        android:title="Invite Friend"
-        app:showAsAction="never" />
-
 </menu>

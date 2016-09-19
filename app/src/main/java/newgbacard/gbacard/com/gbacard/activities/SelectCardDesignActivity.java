@@ -26,6 +26,7 @@ import java.util.List;
 import newgbacard.gbacard.com.gbacard.R;
 import newgbacard.gbacard.com.gbacard.adapters.GalleryImageAdapter;
 import newgbacard.gbacard.com.gbacard.utils.Constants;
+import newgbacard.gbacard.com.gbacard.utils.ConvertImage;
 import newgbacard.gbacard.com.gbacard.utils.Preferences;
 import yuku.ambilwarna.AmbilWarnaDialog;
 
@@ -50,6 +51,8 @@ public class SelectCardDesignActivity extends AppCompatActivity {
 
     private BitmapDrawable selectedBitmapDrawable;
 
+    private ConvertImage convertImage;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +76,8 @@ public class SelectCardDesignActivity extends AppCompatActivity {
         selectDesignButton = (Button) findViewById(R.id.selectDesign);
 
         pref = new Preferences(getApplicationContext());
+
+        convertImage = new ConvertImage();
     }
 
     public void setUpListeners(){
@@ -156,7 +161,7 @@ public class SelectCardDesignActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-              pref.saveCardTemplate(selectedBitmapDrawable);
+              pref.saveCardTemplate(convertImage.convertBitmapDrawableToBitmap(selectedBitmapDrawable));
             }
         });
     }

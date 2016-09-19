@@ -26,6 +26,7 @@ import newgbacard.gbacard.com.gbacard.activities.BarcodeActivity;
 import newgbacard.gbacard.com.gbacard.activities.EditContactActivity;
 import newgbacard.gbacard.com.gbacard.activities.InviteFriendActivity;
 import newgbacard.gbacard.com.gbacard.activities.SelectCardDesignActivity;
+import newgbacard.gbacard.com.gbacard.activities.SettingsActivity;
 import newgbacard.gbacard.com.gbacard.models.Contact;
 import newgbacard.gbacard.com.gbacard.utils.BarcodeUtil;
 import newgbacard.gbacard.com.gbacard.utils.BluetoothUtil;
@@ -260,26 +261,6 @@ public class HomeFragment extends Fragment {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             Intent intent = new Intent(getActivity(), SettingsActivity.class);
-            startActivity(intent);
-            return true;
-        }
-
-        else if (id == R.id.action_select_card_design) {
-            Intent intent = new Intent(getActivity(), SelectCardDesignActivity.class);
-            startActivity(intent);
-            return true;
-        }
-
-        else if (id == R.id.action_edit_profile) {
-            Intent intent = new Intent(getActivity(), EditContactActivity.class);
-            intent.putExtra(Constants.TAG_CONTACT_DETAIL, userContact);
-            startActivity(intent);
-            return true;
-        }
-
-        else if (id == R.id.action_invite_friend) {
-            Intent intent = new Intent(getActivity(), InviteFriendActivity.class);
-            intent.putExtra(Constants.TAG_CONTACT_DETAIL, userContact);
             startActivity(intent);
             return true;
         }

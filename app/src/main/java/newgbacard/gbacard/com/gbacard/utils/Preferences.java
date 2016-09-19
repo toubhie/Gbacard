@@ -54,8 +54,6 @@ public class Preferences {
 
         editor.putString(Constants.KEY_ADDRESS, contact.getAddress());
 
-        Log.i(Constants.TAG_GBACARD, "in save pref...Firstname: " + contact.getFirstName() + "...lastname"
-                + contact.getLastName());
         // commit changes
         editor.commit();
     }
@@ -68,8 +66,6 @@ public class Preferences {
         contact.setPhoneNumber(pref.getString(Constants.KEY_PHONE_NUMBER, null));
         contact.setEmail(pref.getString(Constants.KEY_EMAIL, null));
         contact.setAddress(pref.getString(Constants.KEY_ADDRESS, null));
-
-        Log.i(Constants.TAG_GBACARD, "in get pref...Firstname: " + contact.getFirstName() + "...lastname");
 
         return contact;
     }

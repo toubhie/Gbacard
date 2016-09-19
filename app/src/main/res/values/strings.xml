@@ -270,4 +270,6 @@
     <string name="card_template">card template</string>
     <string name="title_activity_contact_detail2">" "</string>
     <string name="title_activity_invite_friend">Invite Friend</string>
+    <string name="sample_text">Sample Text</string>
+    <string name="title_activity_about">About</string>
 </resources>

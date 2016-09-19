@@ -28,6 +28,7 @@ import java.util.List;
 
 import newgbacard.gbacard.com.gbacard.R;
 import newgbacard.gbacard.com.gbacard.activities.ContactDetailActivity;
+import newgbacard.gbacard.com.gbacard.activities.SettingsActivity;
 import newgbacard.gbacard.com.gbacard.adapters.ContactUserAdapter;
 import newgbacard.gbacard.com.gbacard.models.Contact;
 import newgbacard.gbacard.com.gbacard.utils.Constants;
